@@ -8,6 +8,15 @@ public class Mahasiswa {
     public String nama;
     public int jumlahSKS;
     public double ipk;
+    private String kota;
+
+    public String getKota() {
+        return kota;
+    }
+
+    public void setKota(String kota) {
+        this.kota = kota;
+    }
 
     //behavior/method
     public void  mengambilKRS(){}
@@ -19,6 +28,7 @@ public class Mahasiswa {
         System.out.println("Nama :" + nama);
         System.out.println("Jumlah SKS :" + jumlahSKS);
         System.out.println("IPK :" + ipk);
+        System.out.println("Kota :" + kota);
     }
 
     public boolean create(){
@@ -43,7 +53,7 @@ public class Mahasiswa {
     public boolean delete(){
         return false;
     }
-
+    //constructor
     public Mahasiswa() {
         System.out.println("Ini dari constructor");
         npm = "NPM masih kosong";

@@ -16,12 +16,13 @@ public class Aksi{
         ridha.nama = "Nur Aulia Afridha";
         ridha.jumlahSKS = 100;
         ridha.ipk = 3.55;
+        ridha.setKota("Rantau");
         ridha.tampilkanInfo();
-        if (ridha.create()){
-            System.out.println("Data Berhasil di Simpan");
-        }else {
-            System.out.println("Data Gagal di Simpan");
-        }
+        // if (ridha.create()){
+        // System.out.println("Data Berhasil di Simpan");
+        //}else {
+        //  System.out.println("Data Gagal di Simpan");
+        //}
 
         Mahasiswa mahasiswa = new Mahasiswa();
         mahasiswa.npm = "19630400";
