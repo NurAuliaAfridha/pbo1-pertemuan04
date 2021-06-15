@@ -1,4 +1,5 @@
 import model.Mahasiswa;
+import model.MahasiswaTransfer;
 
 import java.util.Scanner;
 
@@ -30,8 +31,19 @@ public class Aksi{
         mahasiswa.tampilkanInfo();
 
 
-        Mahasiswa m = new Mahasiswa();
-        m.tampilkanInfo();
+        Mahasiswa mahasiswa1 = new Mahasiswa();
+        mahasiswa1.tampilkanInfo();
 
+        MahasiswaTransfer mahasiswaTransfer = new MahasiswaTransfer();
+        mahasiswaTransfer.npm = "19630400";
+        mahasiswaTransfer.nama = "Transfer";
+        mahasiswaTransfer.tampilkanInfo();
+        mahasiswaTransfer.getKota();
+        mahasiswaTransfer.setKota("Banjarbaru");
+        mahasiswaTransfer.setKampusSebelumnya("Univ dimana saja");
+        mahasiswaTransfer.setSksSebeumnya(80);
+
+        FormSederhana formSederhana = new FormSederhana();
+        formSederhana.setVisible(true);
     }
 }
