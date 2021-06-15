@@ -16,5 +16,9 @@ public class MahasiswaAksi {
         m1.delete(2);
         m1.delete("bjb");
         m1.delete("19634444",24);
+
+        MahasiswaTransfer mahasiswaTransfer = new MahasiswaTransfer();
+        m1.delete();
+        mahasiswaTransfer.delete();
     }
 }
