@@ -28,8 +28,9 @@ public class Aksi{
         mahasiswa.nama = "Fulanah";
         mahasiswa.tampilkanInfo();
 
-        Scanner inputan = new Scanner(System.in);
-        ridha.nama = inputan.nextLine();
+
+        Mahasiswa m = new Mahasiswa();
+        m.tampilkanInfo();
 
     }
 }

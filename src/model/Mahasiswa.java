@@ -44,4 +44,9 @@ public class Mahasiswa {
         return false;
     }
 
+    public Mahasiswa() {
+        System.out.println("Ini dari constructor");
+        npm = "NPM masih kosong";
+        nama = "Nama masih kosong";
+    }
 }
